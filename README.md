@@ -63,7 +63,7 @@ CREATE DATABASE DB_NAME;
 ```
 3. Select the newly created database:
 ```bash
-USE gocrud_app;
+USE DB_NAME;
 ```
 
 4. Create the users table with the desired columns:
