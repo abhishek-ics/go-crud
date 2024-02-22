@@ -47,3 +47,31 @@ The server should be running at `http://localhost:8080`.
 - `DB_HOST`: MySQL database host
 - `DB_PORT`: MySQL database port
 - `DB_NAME`: MySQL database name
+
+## Creating the database schema
+
+1. To create the database and schema, you can follow the instructions below:
+Log into your database:
+```bash 
+sudo mysql -u root -p
+```
+
+2. Create the database using SQL commands or a MySQL management tool:
+
+```bash 
+CREATE DATABASE DB_NAME;
+```
+3. Select the newly created database:
+```bash
+USE gocrud_app;
+```
+
+4. Create the users table with the desired columns:
+```bash
+  CREATE TABLE users (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  first_name VARCHAR(50),
+  last_name VARCHAR(50),
+  email VARCHAR(100),
+);
+```
